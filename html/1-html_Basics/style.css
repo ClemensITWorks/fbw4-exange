@@ -1,0 +1,14 @@
+h1{color: red;}
+a:link{
+    text-decoration: none;
+   
+  width: 200px;
+  height: 50px;
+  background-color: red;
+
+  }
+  a:visited{color:pink;}
+
+  a:hover {
+    color: green;
+  }

@@ -1,0 +1,24 @@
+Find the the number within an array that is the closest to zero. if there are positive 
+and negativ numbers that are even close, present the positive number first, 
+than the negative number.
+
+use function
+two working vars wrkPos wrkNeg
+get starting values
+
+for loop
+
+if array element higher 0 add to wrkPos
+if array element lower 0 add to wrkNeg
+
+for loop 
+
+check if array element is positve and lower than wrkPos
+yes > load wrkPos with arrEl
+
+check if array element is
+
+else
+
+object name  distance
+distance

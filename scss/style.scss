@@ -1,0 +1,23 @@
+.container{font-size: 50px;
+@extend borderStyle;
+    border: 2px solid blue;
+    box-shadow: 5px 5px 10px 
+    p{letter-spacing: 10px;}
+    >h3{
+        text-decoration: underline;
+        &:hover{        //normaly the compiler allways creates space between the different selectors. & is used to tell the compiler to delete the space 
+            text-shadow: 5px;
+        }
+
+    }
+}
+
+.container2{
+    @extend borderStyle;
+}
+
+%borderStyle{
+    border: 2px solid blue;
+    box-shadow: 5px 5px 10px red;
+
+}

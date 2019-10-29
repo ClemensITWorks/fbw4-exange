@@ -1,0 +1,101 @@
+.main{
+    width: 100%;
+  height: 800px;
+}
+
+.picCont1{
+    width: 20%;
+    height: 32%;
+    position: absolute;
+    z-index: 1;
+    left:42%;
+    top: 30%;
+    background-image: url("./nat-1.jpg");
+   /* background-color: red;*/
+
+    box-shadow: 0 0 15px black;
+  margin: 15px;
+    border: 0px green solid;
+    transition: 0.3s;
+}
+.picCont2{
+    width: 20%;
+    height: 32%;
+    position: absolute;
+    z-index: 2;
+    left:58%;
+    top: 40%;
+   /* background-color: green;*/
+
+    background-image: url("./nat-2.jpg");
+box-shadow: 0 0 15px black;
+transition: 0.3s;
+}
+.picCont3{
+    width: 20%;
+    height: 32%;
+    position: absolute;
+    z-index: 3;
+    left:50%;
+    top: 50%;
+/*    background-color: blue;*/
+   background-image: url("./nat-3.jpg");
+    box-shadow: 0 0 15px black;
+    transition: 0.3s;
+}
+
+.picCont1:hover{
+    position: absolute;
+    z-index: 10;
+ 
+    background-image: url("./nat-1.jpg");
+    transform: scale(1.2);
+   /* background-color: red;*/
+
+    box-shadow: 0 0 15px black;
+    margin: 15px;
+    outline-offset: 10px;
+    outline-color: green;
+    outline-style: solid;
+    outline-width: 15px;
+   
+}
+.picCont2:hover{
+  
+    position: absolute;
+    z-index: 10;
+   /* background-color: green;*/
+outline-offset: 10px;
+outline-color: green;
+outline-style: solid;
+outline-width: 15px;
+
+    background-image: url("./nat-2.jpg");
+   /* box-shadow: 0 0 15px black;*/
+   transform: scale(1.2);
+  
+}
+.picCont3:hover{
+   /* width: 22%;
+    height: 27%;*/
+    position: absolute;
+    z-index: 10;
+   background-image: url("./nat-3.jpg");
+    box-shadow: 0 0 15px black;
+    transform: scale(1.2);
+    outline-offset: 10px;
+outline-color: green;
+outline-style: solid;
+outline-width: 15px;
+
+}
+h1{color: green;
+font-family: arial;
+text-align: center;}
+h1:hover{color: green;
+    font-family: arial;
+    text-align: center;
+   
+    transform: rotate(5deg);
+    transform: skewX(20deg);
+}

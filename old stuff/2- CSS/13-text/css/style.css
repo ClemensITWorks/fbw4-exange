@@ -1,0 +1,15 @@
+.pagehead{
+color: rgba(255, 0, 255, 0.5);
+    background-color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+    text-transform: capitalize;
+    height: 500px;
+    top: -250px;
+ clip-path: polygon(0 0,100vw 0,100vw 75vh,0 )
+}
+
+.pagehead+p{
+    text-align: justify;
+    text-indent: 50px;
+    word-spacing: 50px;
+}

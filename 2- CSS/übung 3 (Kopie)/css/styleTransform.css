@@ -1,0 +1,65 @@
+.container{
+  position: relative;
+    width: 100vh;
+    height: 100vh;
+}
+
+.move1{
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 230, 0);
+     animation-name: slideLeft;
+     animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+   animation-fill-mode: both;
+   animation-play-state: paused;
+
+}
+
+
+.directionL:hover~.move1{ 
+  background-color: black;
+  animation-direction: normal;
+ animation-play-state: running;
+}
+.directionR:hover~.move1{ 
+  background-color: rgb(126, 126, 126);
+  animation-direction: reverse;
+ animation-play-state: running;
+}
+
+
+.directionL{ 
+    position: relative;
+    top: 50vh;
+    left: 120vh;
+    width: 100px;
+    height: 100px;
+    background-color:green;}
+
+    .directionR{ 
+    position: relative;
+    top: 50%;
+    left: 20%;
+    width: 100px;
+    height: 100px;
+    background-color: red;}
+
+
+           
+
+
+@keyframes slideLeft{
+  
+   1% {right: 10px;}
+     100% {right: 800px;}
+}
+
+@keyframes slideRight{
+    0% {left: 0px;}
+   50%{left: 45%}
+    100% {left: 90%;}
+}

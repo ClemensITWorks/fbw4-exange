@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    grid-template-areas:    "panner panner panner panner"
+                            "sidebar content content content"
+                            "footer footer footer footer";
+grid-template-rows: 20% auto 20%;
+grid-gap:10px;
+height: 100vh;
+}
+.panner{
+    grid-area: panner;
+background-color: aquamarine
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: chartreuse
+}
+.content{
+    grid-area: content;
+    background-color: darkolivegreen
+}
+.footer{
+    grid-area: footer;
+background-color: rgb(244, 127, 255)
+}

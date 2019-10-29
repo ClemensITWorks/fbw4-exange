@@ -1,0 +1,15 @@
+.slider{
+    background-color: red;
+    height: 200px;
+    width: 400px;
+    margin: auto;
+}
+@keyframes slider{
+    0%{
+
+    }
+    25%{
+
+    }
+    
+}

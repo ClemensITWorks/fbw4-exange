@@ -1,0 +1,41 @@
+.frontClass{
+    background-color: purple;
+    position: absolute; 
+    width: 200px;
+height: 200px;
+font-size: 3rem;
+text-align: center;
+line-height: 150px;
+transition-property: all;
+transition-duration: 2s;
+}
+.frontClass:hover{
+   transform: rotateY(180deg);
+background-color: red;
+backface-visibility: hidden;
+   
+}
+
+.bckgrndClass{
+    background-color: purple;
+    position: absolute; 
+    width: 200px;
+height: 200px;
+left: 250pX;
+font-size: 3rem;
+text-align: center;
+line-height: 150px;
+transform:rotateY(180deg);
+/*backface-visibility: hidden;*/
+display: none;
+transition-property: all;
+transition-duration: 2s;
+}
+.bckgrndClass:hover{
+   transform: rotateY(360deg);
+background-color: red;
+backface-visibility: visible;
+   display: 
+}
+
+.container:hover > .frontClass

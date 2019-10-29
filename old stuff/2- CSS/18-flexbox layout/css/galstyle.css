@@ -1,0 +1,13 @@
+
+.container{
+    display: flex;
+}
+.gallery{
+    flex: 25%;
+    padding: 10px;
+}
+.gallery>img{
+    width:100%;
+    margin-top:-3px;
+    margin-botton:-3px;
+}

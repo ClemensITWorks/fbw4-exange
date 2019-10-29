@@ -1,0 +1,33 @@
+.container{
+position: relative;
+width: 100vw;
+height: 60vh;
+background-color: aqua;
+}
+
+img{
+    position: absolute;
+    border: 3px solid black;
+    &:nth-child()
+}
+
+
+@mixin imageStyler($size){              //call with @include btnStyle
+    box-shadow: 5px 5px red;
+    letter-spacing: $size * 1px;
+    text-transform: uppercase;
+    background-color: rgba(61, 44, 44, 0.623);
+    border: 2px solid green;
+    font-size:$size*10px;
+}
+.btn-lg{
+    @include btnStyle(3);
+}
+
+.btn-md{
+    @include btnStyle(2);
+}
+
+.btn-sm{
+    @include btnStyle(1);
+}

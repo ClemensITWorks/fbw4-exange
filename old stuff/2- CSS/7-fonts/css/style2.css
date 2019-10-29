@@ -1,0 +1,11 @@
+@font-face{
+    src: url('../css/PermanentMarker-Regular.ttf');
+    font-family:"fontpm";
+}
+
+.fontClass{
+    font-family: 'fontpm';
+    font-style: normal;
+    font-weight: bolder;
+font-size:3rem;}
+

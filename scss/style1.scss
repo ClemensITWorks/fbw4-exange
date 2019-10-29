@@ -1,0 +1,19 @@
+@mixin btnStyle($size){              //call with @include btnStyle
+    box-shadow: 5px 5px red;
+    letter-spacing: $size * 1px;
+    text-transform: uppercase;
+    background-color: rgba(61, 44, 44, 0.623);
+    border: 2px solid green;
+    font-size:$size*10px;
+}
+.btn-lg{
+    @include btnStyle(3);
+}
+
+.btn-md{
+    @include btnStyle(2);
+}
+
+.btn-sm{
+    @include btnStyle(1);
+}

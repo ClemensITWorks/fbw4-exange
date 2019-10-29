@@ -1,0 +1,26 @@
+.father{background-color: red;
+height: 200px;
+width: 500px;
+position: relative;
+
+}
+.child
+{
+/*margin: auto;*/
+
+position: absolute;
+bottom: calc(50% - 25px);
+left: 225px;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+}
+.subChild
+{
+position: absolute;
+    background-color: green;
+    height: 20px;
+    width: 20px;
+left: 15px;
+top: 15px;
+}

@@ -1,0 +1,23 @@
+document.write(fill in content)
+-   document.write() shows content at the viewpoint
+
+prompt
+let variablename = prompt("comment text inside popup window")
+-   prompt("text") opens a input - popupwindow. it returns a value 
+    that can be used with a variable 
+
+return
+-   return is usualy used for returning values from functions like numbers or strings.
+    it is not recomended to load variables first and than return the 
+    value of the variable, better return a value 
+
+concat // concatinate
+-   let txt = str1.concat(" , ",str2)
+    similar to "lorem" + "ipsum"
+    better use +
+
+indexOf
+-   paragraph.indexOf("A")
+    position of a letter in a string
+    !if more than one letter is used as a search item, 
+    only the first letter will be tested

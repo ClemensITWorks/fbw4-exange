@@ -1,0 +1,14 @@
+.button
+{
+    
+    margin: auto;
+    width: 30%;
+    height: 100px;
+    background-color: red;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 200%;
+text-align: center
+}

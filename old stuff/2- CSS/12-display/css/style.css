@@ -1,0 +1,24 @@
+.someClass{
+    width: 200px;
+    height:200px;
+    background-color: purple;
+  display: none;
+/*visibility: hidden;*/
+}
+
+.inlineDiv{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 5px;
+   /* float: left;*/
+    display: inline;
+}
+.inlineblockDiv{
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    margin: 5px;
+   /* float: left;*/
+    display: inline-block;
+}

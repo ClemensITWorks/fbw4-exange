@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-image: url(../image/screenfix.png);
+  background-size: 1200px;
+  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#gallery{
+        width: 100%;
+    }
+
+/* Navigation Bar */
+@keyframes slideInFromLeft{
+  0%{
+      transform: translateX(-100%);
+  }
+  100%{
+      transform: translateX(0);
+  }
+}
+header{
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+a{
+    text-decoration: none;}
+    
+.nav{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: inline; */
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+
+}
+
+.nav img{
+  height: 52px;
+  margin-top: 0.5px;
+  margin-left: 25px;
+}
+
+.nav a{  
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none; 
+    color: #1F3C49;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    letter-spacing: 3px;
+    /* width: 10vw; */
+    background-color: rgba(238, 238, 238, 0.509);
+    transition-duration: 0.5s;
+}
+
+.nav li{
+    float: left;
+
+    margin-left: 20px;
+}
+
+.nav li a:hover{
+    background-image: linear-gradient(to bottom left, #0098A8, #7300bf);
+    color: white;
+}
+
+.nav li:last-child{
+    float: right;
+    margin-right: 20px;
+}
+
+.nav li:first-child{
+background-color: rgba(240, 248, 255, 0);
+}
+
+
+/* End of Navigation Bar */
+
+  
+  .slider {
+    top: 90px;
+    position:relative;
+    width:900px;
+    border:10px solid white;
+    margin:20px auto;
+    box-shadow:0px 0px 40px #000;
+  }
+  .slider > img {
+    display:none;
+    width:100%;
+  }
+  .slider > input {
+    position:absolute;
+    opacity: 0;
+  }
+  .slider > input:checked + label + img {
+    display:block;
+  }
+  
+  .slider > label,
+  .slider > input:checked ~ label ~ label ~ label ~ label {
+    display:none;
+  }
+  .slider > input:checked + label {
+    display:block;
+    left:0;
+  }
+  .slider > input:checked ~ label ~ label ~ label {
+    display:block;
+    right:0;
+  }
+  
+  .slider > label {
+    position:absolute;
+    top:0;
+    width:25%;
+    height:100%;
+    visibility:hidden;
+  }
+  .slider > label:before {
+    content:'';
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    visibility:visible;
+  }
+  .slider > label:after {
+    display:block;
+    position:absolute;
+    top:50%;
+    width:25px;
+    height:25px;
+    line-height:22px;
+    margin:-15px 10px 0 10px;
+    background-image: linear-gradient(to bottom left, #0098A8, #7300bf);
+    color:white;
+    font-family:'Arial';
+    font-weight:bold;
+    font-size:18px;
+    text-align:center;
+    visibility:hidden;
+    border:2px solid white;
+    border-radius:20px;
+    box-shadow:0 3px 4px black;
+  }
+  .slider > label:hover:after {
+    visibility:visible;
+  }
+  
+  .slider > input:checked + label:after {
+    left:0;
+    content:'\00AB';
+  }
+  .slider > input:checked ~ label ~ label ~ label:after {
+    right:0;
+    content:'\00BB';
+  }
+  
+  .text{
+    top: 0px;
+    position:relative;
+    width:900px;
+    padding: 10px;
+    margin:20px auto;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom left, #0098A8, #7300bf);
+  }
+
+  @media only screen and (max-width: 1024px){
+    /* Navigation Bars 1024px */
+
+        .nav li{
+            margin-left: 5px;
+        }
+        .nav img{
+            margin-left: 10%;
+            margin-right: 10px;
+        }
+    /* End of Navigation Bar */
+    .slider {
+        width: 700px;
+    }
+
+    .text{
+        width: 600px;
+        font-size: 18px;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 767px){
+
+    /* Navigation Bars 700px */
+    @keyframes slideInFromTop{
+      0%{
+          transform: translateY(-100%);
+      }
+      100%{
+          transform: translateY(0);
+      }
+  }
+  header{
+    animation: 0.75s ease-out 0s 1 slideInFromTop;
+  }
+
+
+    .nav{
+        display: grid;
+        position: unset;
+    }
+
+    .nav li{
+        margin: 0;
+    }
+
+    .nav a{
+      width: 100vw;
+  }
+
+    /* End of Navigation Bar */
+
+
+    .slider {
+        width: 80%;
+    }
+    .text{
+        width: 80%;
+        font-size: 15px;
+    }
+}

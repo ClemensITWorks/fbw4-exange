@@ -1,0 +1,23 @@
+*{padding: 0; margin:0;}
+
+.father{ position: relative;
+left: 100px;
+top: 100 px;
+background-color: red;
+}
+
+.gotop{position: fixed;
+right: 5px;
+bottom:5px;
+}
+
+.subDiv{padding: 50px;
+background-color: green;}
+
+
+.someClass{position: relative;
+background-color: aqua; 
+width: 100px;
+left: 50px;
+top: 10px;
+}

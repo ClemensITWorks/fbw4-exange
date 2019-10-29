@@ -1,0 +1,16 @@
+! = autotemplate
+# = automatic id
+alert = neues fenster mit eine informationstext
+DOM = document object model
+
+
+primitive datatypes
+every variable has got its own data
+String, Number, Boolean, undefined, null, symbole
+
+string 
+const name ='${1+1+1} people is here
+
+reference datatype
+object, array, functions
+

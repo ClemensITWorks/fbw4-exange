@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav {
+    list-style-type: none;
+    background-color: aqua;
+    height: 50px;
+  
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: white;
+      margin: 10px;
+      display: block;
+      text-align: center;
+    }
+  
+    li {
+      /* display: inline; */
+      margin-right: 10px;
+      float: left;
+      margin-top: 5px;
+      background-color: black;
+      height: 40px;
+      box-shadow: 1px 1px 5px black;
+      min-width: 150px;
+  
+      &:first-child {
+        margin-left: 10px;
+      }
+  
+      &:last-child {
+        float: right;
+      }
+  
+      &:hover {
+        box-shadow: 1px 1px 10px black;
+  
+        a {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  
+  /*thre next terminal command 
+  to show your local ip address*/
+  /*ip addr show*/
+  
+  #togglecheckbox {
+    display: none;
+  }
+  
+  .togglebox label {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgba(255, 166, 0, 0.493);
+    position: relative;
+    display: none;
+    margin: 10px;
+  
+    span {
+      width: 40px;
+      left: 5px;
+      height: 1px;
+      position: absolute;
+      background-color: black;
+      transition: transform 1s;
+  
+      &:nth-child(1) {
+        top: 10px;
+      }
+  
+      &:nth-child(2) {
+        top: 25px;
+      }
+  
+      &:nth-child(3) {
+        top: 40px;
+      }
+    }
+  }
+  @mixin pos1(){}
+  #togglecheckbox:checked ~ {
+    .nav {
+      height: 230px;
+    }
+  
+    .togglebox label span {
+      &:nth-child(2) {
+        display: none;
+      }
+  
+      &:nth-child(1) {
+        //transform: rotate(45deg);
+       // top: 25px;
+       @include tglBxStyle(45deg, 25px);
+      }
+  
+      &:nth-child(3) {
+       // transform: rotate(-45deg);
+       // top: 25px;
+       @include tglBxStyle(-45deg, 25px);
+      }
+    }
+  }
+  
+  @mixin tglBxStyle($deg,$posTop){              //call with @include btnStyle
+    transform: $deg;
+    top: $posTop;
+}
+
+  @media (max-width: 821px) {
+    .nav {
+      li {
+        width: 100%;
+  
+        &:first-child {
+          margin-left: 0;
+        }
+  
+        &:last-child {
+          float: left;
+        }
+      }
+  
+      /* display: none; */
+      height: 0;
+      overflow: hidden;
+      transition: height 1s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  
+    .togglebox label {
+      display: block;
+    }

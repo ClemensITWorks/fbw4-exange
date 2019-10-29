@@ -1,0 +1,38 @@
+Version 1 (not ready, check version 2)
+get morseInputString. the return will be a string of letters, numbers and space
+
+create an array with the morsecodestrings as elements for each letter/number/space/
+and create an Array where each morsecodestring is given an equivalent letter/number/space.
+the index of the letter/number/space has to be the same as the corresponding morsecode.
+
+create a start value for the morseInputSubString
+
+
+make a for i-loop from the beginning to the end of the morsestring
+
+check for space inside the morsestring at Index[i]
+if yes, you reached the end of the word 
+ 
+inside this loop check if the 
+
+
+version 2
+- find positions of space and space*3
+    create two arrays one with the indices of all space using /\s/g and 
+    one array with the indices of all space*3 using /\s{3}/g
+    build an array with standardmorsestrings and the corrosponding letter as arrayvalues
+    add "···−−−···" as morseelement to the standardmorsecodestringarray and "SOS" to the
+    corresponding letterstringarray
+     
+- create returnString 
+    decode first letter from morsestring using 0 as start index and first space position as 
+    parameters for the first substring to check.
+    compare the array of standardmorsestrings with the substring in a for loop.
+    if the substring equals one of the standard morse strings add the corresponding letter 
+    to the returnString.
+    check wordend by checking if spaceposition equals 3*spaceposition. if so add space 
+    to returnString
+    use the endposition of the substring as the new start and the next value from 
+    the space position array as the new end.
+
+    repeat with while or similar until there are no more space positions 

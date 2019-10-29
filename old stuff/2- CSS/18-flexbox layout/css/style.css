@@ -1,0 +1,37 @@
+*{padding: 0;
+margin: 0;
+}
+
+.container > div {
+    background-color: blueviolet;
+    width: 100px;
+    text-align: center;
+   margin: 10px;
+    font-size: 30px;
+}
+
+.container{
+    display: flex;
+    background-color: brown;
+    justify-content: space-around;
+   
+}
+.container1 > div {
+    background-color: blueviolet;
+    width: 100px;
+    text-align: center;
+   margin: 10px;
+    font-size: 30px;
+}
+
+.container1{
+    display: flex;
+    background-color: brown;
+   align-items: center;
+   height: 300px;
+}
+
+.con2ai{align-items: center;}
+.con2{
+    
+}

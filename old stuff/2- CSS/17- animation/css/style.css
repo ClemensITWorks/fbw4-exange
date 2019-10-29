@@ -1,0 +1,49 @@
+.animatedDiv{
+    background-color: red;
+width: 200px; 
+height:200px;
+border: solid black 10px;
+border-radius: 50%;
+position: absolute;
+top:0;
+left: 0;
+animation-name: multiMove;
+animation-duration: 5s;
+animation-fill-mode: forward;
+animation-iteration-count: 5;
+
+
+}
+
+@keyframes movingBall {
+from{
+top:0;
+left:0;
+
+}
+to 
+{
+top:200px;
+left:200px;
+}
+}
+
+@keyframes multiMove{
+    0%{top: 0;
+    left: 0;}
+    25%{top:0;
+    left:200px;}
+    
+    50%{
+top: 200px;
+left:200px;
+    }
+    75%{
+        top:200px;
+        left:0;
+    }
+    100%{
+        top:0;
+        left: 0;
+    }
+}
