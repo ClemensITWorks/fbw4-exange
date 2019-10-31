@@ -58,11 +58,11 @@ function findPhrase2(text, phrase) {
     let loopIndex = 0;
     let phrslngth = phrase.length;
      
-   for (i=0; i<text.length;i++){
+   for (i=0; i<text.length;i++){    //for loop is only used as a counter here 
      
-     loopIndex = text.indexOf(phrase, i); //searches the text for the phrase starting at srchIndex and gives back the first index that it finds from this position
-     i=loopIndex+phrslngth;
-     if (loopIndex==-1){i=text.length+100;}
+     loopIndex = text.indexOf(phrase, i); //searches the text for the phrase starting at srchIndex and sets new loopIndex
+      i=loopIndex+phrslngth; // sets i to new value last loopIndex+ length of phrase
+     if (loopIndex==-1){i=text.length+100;}   // if loopIndex is -1, exit loop
      
         numberOfRepeat++;
 
