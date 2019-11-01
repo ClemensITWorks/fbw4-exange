@@ -1,12 +1,7 @@
 function scores(arr1, arr2, newEntry) {
 
     tgthrArr = [].concat(arr1, arr2); //tgthrArr = together array
-    average = 0;
-    for (i = 0; i < tgthrArr.length; i++) {
-        average = average + tgthrArr[i];
-    }
-    console.log('1', tgthrArr, average);
-
+   
     tgthrArr.push(newEntry);
     average = 0;
     best = 0;
@@ -28,4 +23,4 @@ function scores(arr1, arr2, newEntry) {
 
 //call
 handleArr = scores([67, 82, 91, 96, 54], [46, 48, 24, 33, 30], 57);
-console.log('outside', handleArr);
+console.log(handleArr);
