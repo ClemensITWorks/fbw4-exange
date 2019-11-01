@@ -1,0 +1,7 @@
+imagine dhl uses 5kg boxes and 2kg boxes. customers have to use 1kg-units.
+dhl has to decide, which amount of 5kg boxes and 2kg boxes are needed to
+use the boxes with no spare room left.
+minimum delivery weight is 7kg.
+the combination with less handling is prefered (5kg boxes better than 2kg boxes)
+create a function that takes the amount of kg and returns how many 5kg - and 2kg 
+boxes are needed to transport the freight without wasting room.
