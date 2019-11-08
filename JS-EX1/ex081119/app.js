@@ -1,6 +1,8 @@
 function sortStr(inArr){
-retArr=inArr[0];
-retArr=inArr.sort(function(a,b){inArr.length[a]- inArr.length[b]})
+//retArr=inArr[0];
+let first=inArr.findIndex()
+inArr.findIndex(inArr.length)
+//retArr=inArr.sort(function(a,b){inArr.length[a]- inArr.length[b]})
 /*    booChk=true;
     for (i=1;inArr.length[i-1]<inArr.length[i];i++){
     }
